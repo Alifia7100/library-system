@@ -15,3 +15,6 @@ Simple Library Information System
    git clone https://github.com/Alifia7100/library-system.git
    cd library-system
 
+# Author
+Mufti Alifia Maryamah
+2410631250015

@@ -15,7 +15,7 @@ Route::get('/', function () {
 // return view('books.index');
 //});
 
-Route::get('/books', [BookController::class, 'index']);
+Route::get('/books', [BookController::class, 'index'])->name('buku');
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/members', [MemberController::class, 'index']);
 Route::get('/books/{id}', [BookController::class, 'show']);

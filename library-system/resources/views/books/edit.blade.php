@@ -7,7 +7,7 @@
 <body>
     <h1>Edit Buku</h1>
 
-    <form action="{{ route('books.update', $book) }}" method="POST">
+    <form action="{{ route('books.update', $book) }}" method="POST" novalidate>
         @csrf
         @method('PUT')
         <div>

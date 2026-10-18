@@ -3,6 +3,10 @@
 @section('title', $title)
 
 @section('content')
+    @if (session('success'))
+        <p>{{ session('success')}}</p>
+        @endif
+        
     <h1>Daftar Buku</h1>
     <p>{{ $description }}</p>
 

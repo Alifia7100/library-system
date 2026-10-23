@@ -17,7 +17,7 @@
     <ul>
         @foreach($books as $book)
             <li>
-                <h3>{{ $book->title }}</h3>
+                <h3>{{ $book->title }} <small> ({{ $book->category->name ?? 'Belum Ada Kategori' }}) </small></h3>
                 <p>ID: {{ $book->id }}</p>
                 <p>Penulis: {{ $book->author }}</p>
                 <p>Tahun: {{ $book->year }}</p>

@@ -13,6 +13,10 @@
     <!-- Tombol menuju Form Tambah Buku -->
     <a href="{{ route('books.create') }}" class="btn btn-primary mb-3">+ Tambah Buku Baru</a>
     <br><br>
+    <form action="{{ route('logout') }}" method="POST">
+    @csrf
+    <button type="submit">Logout</button>
+    </form>
 
     <ul>
         @foreach($books as $book)
